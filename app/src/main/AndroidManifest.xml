@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.atenddance">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splacescreen"
+        android:label="@string/app_name2"
+        android:roundIcon="@drawable/splacescreen"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AtEndDance">
+        <activity
+            android:name="com.example.foralldescp.AllDetails"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".inforec.SubjectDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddDayDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplaceScreen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
